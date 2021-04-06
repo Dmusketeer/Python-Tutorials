@@ -1,0 +1,4 @@
+how to open file in python.
+Hello! Welcome to exp.txt
+This file is for testing purposes.
+Good Luck!
