@@ -4,3 +4,6 @@ import keyword
 print("keywords in python :")
 print(keyword.kwlist)
 print(len(keyword.kwlist))
+x="Dheeraj"
+y=x.upper()
+print(y)
