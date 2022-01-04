@@ -60,3 +60,11 @@ Ex : <br />
     obj =Dog()
 
 This will create an object named obj of the class Dog defined above.
+
+
+## The self  
+1. Class methods must have an extra first parameter in the method definition. We do not give a value for this parameter when we call the method, Python provides it.
+2. If we have a method that takes no arguments, then we still have to have one argument.
+3. This is similar to this pointer in C++ and this reference in Java.
+
+When we call a method of this object as myobject.method(arg1, arg2), this is automatically converted by Python into MyClass.method(myobject, arg1, arg2) – this is all the special self is about.
