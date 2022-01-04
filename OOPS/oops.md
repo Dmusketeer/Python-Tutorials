@@ -37,3 +37,26 @@ Ex: <br/>
 
     class Dog:
         pass
+
+# -:-Objects -:-
+
+- The object is an entity that has a state and behavior associated with it.
+- It may be any real-world object like a mouse, keyboard, chair, table, pen, etc. Integers, strings, floating-point numbers, even arrays, and dictionaries, are all objects.
+
+### An object consists of :
+
+- State: It is represented by the attributes of an object. It also reflects the properties of an object.
+- Behavior: It is represented by the methods of an object. It also reflects the response of an object to other objects.
+- Identity: It gives a unique name to an object and enables one object to interact with other objects.
+
+To understand the state, behavior, and identity let us take the example of the class dog (explained above). 
+
+- The identity can be considered as the name of the dog.
+State or Attributes can be considered as the breed, age, or color of the dog.
+The behavior can be considered as to whether the dog is eating or sleeping.
+
+Ex : <br />
+
+    obj =Dog()
+
+This will create an object named obj of the class Dog defined above.
