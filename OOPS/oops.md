@@ -68,3 +68,10 @@ This will create an object named obj of the class Dog defined above.
 3. This is similar to this pointer in C++ and this reference in Java.
 
 When we call a method of this object as myobject.method(arg1, arg2), this is automatically converted by Python into MyClass.method(myobject, arg1, arg2) – this is all the special self is about.
+
+
+## The __ init __ method 
+- The __ init __ method is similar to constructors in C++ and Java. 
+- It is run as soon as an object of a class is instantiated. The method is useful to do any initialization you want to do with your object. 
+
+Now let us define a class and create some objects using the self and __ init __ method.<b> [Click Here](Class_Object.py)
