@@ -74,4 +74,79 @@ When we call a method of this object as myobject.method(arg1, arg2), this is aut
 - The __ init __ method is similar to constructors in C++ and Java. 
 - It is run as soon as an object of a class is instantiated. The method is useful to do any initialization you want to do with your object. 
 
-Now let us define a class and create some objects using the self and __ init __ method.<b> [Click Here](Class_Object.py)
+Now let us define a class and create some objects using the self and __ init __ method.</b> [Click Here](Class_Object.py)
+
+
+
+## -:- Inheritance -:-
+
+- Inheritance is the capability of one class to derive or inherit the properties from another class.
+- The class that derives properties is called the derived class or base class and the class from which the properties are being derived is called the base class or parent class.
+
+
+The benefits of inheritance are:
+
+- It represents real-world relationships well.
+- It provides the reusability of a code. We don’t have to write the same code again and again.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
