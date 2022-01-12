@@ -18,4 +18,3 @@ print(f'Tommy is also a {Tommy.__class__.attr2}')
 # Accessing instance attributes
 print(f"My Name is {Rodger.name}")
 print(f"My Name is {Tommy.name}")
-
