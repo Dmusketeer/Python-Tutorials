@@ -5,7 +5,6 @@ num=[1,2,3]
 # for number in num:
 #     print(number)   #1,2,3
 
-
 # NOTE : iterables are not iterator while iterators are iterables
 
 # nums=num.__iter__()
