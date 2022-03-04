@@ -1,5 +1,3 @@
-                            
-
 """
                     # Functions
 
@@ -11,7 +9,6 @@
         function_body
         return <value>         
 # Parameters, return expression and documentation string are optional.
-
 """
 
 def square(x):
@@ -19,3 +16,50 @@ def square(x):
     return x*x
 num=int(input("Enter a number : "))
 print(f'square of {num} is : ',square(num))
+
+
+
+
+                        # Common Built-in Functions
+"""
+There are many built-in functions Python offers. Here are some of them listed.
+
+len : Returns the length of an object.
+
+e.g : len('hello') -> 5
+type : Returns the type of an object.
+
+e.g : type([2,3]) -> <type list>
+range : Returns a iterator of a number sequence.
+
+e.g : list(range(10, 13)) -> [10, 11, 12]
+
+list(range(3)) -> [0, 1, 2]
+
+"""
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
