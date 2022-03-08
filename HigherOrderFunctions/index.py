@@ -13,7 +13,7 @@ It can be functioned as a data and be assigned to a variable.
 
 """
 
-# functioned as a data 
+#                       **** functioned as a data **** 
 
 def greet(name):
     return f"Hey {name}!!!"
@@ -26,6 +26,30 @@ print(wish("Prakhar"))
 print(type(wish)) # function
 
 print(greet("Ram"))
+
+
+print("\n************************\n")
+
+
+
+
+#                       **** functioned as an Arguments **** 
+
+def greet(fname,lname):
+    return f"Hey {fname} {lname}!!!"
+
+def add(x, y):
+    return x + y
+def sub(x, y):
+   return x - y
+def prod(x, y):
+    return x * y
+def do(func,x,y):
+    return func(x,y)
+
+print(do(add,2,3)) # add as an argument
+
+print(do(greet,"Dheeraj","Tiwari"))
 
 
 
