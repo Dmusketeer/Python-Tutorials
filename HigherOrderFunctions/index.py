@@ -52,5 +52,20 @@ print(do(add,2,3)) # add as an argument
 print(do(greet,"Dheeraj","Tiwari"))
 
 
+print("\n************************\n")
 
+
+
+
+#                       **** Returning a function **** 
+
+def outer():
+    def inner():
+        s="Hello World!!! Returning a function"
+        return s
+    return inner()
+
+print(outer())
+
+# *** NOTE : You can observe from the output that the return value of 'outer' function is the return value of 'inner' function. 
 
