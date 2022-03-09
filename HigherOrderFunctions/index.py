@@ -66,6 +66,21 @@ def outer():
     return inner()
 
 print(outer())
+print("\n************************\n")
 
 # *** NOTE : You can observe from the output that the return value of 'outer' function is the return value of 'inner' function. 
 
+
+def outer():
+    def inner():
+        s="Hello Dheeraj"
+        return s
+    return inner # Removed '()' to return 'inner' function itself
+
+print(outer())
+
+func=outer()
+print(type(func))
+print(func()) # calling inner function
+
+# *** NOTE: Parenthesis after the inner function are removed so that the outer function returns inner function.
