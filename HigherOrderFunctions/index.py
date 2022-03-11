@@ -84,3 +84,4 @@ print(type(func))
 print(func()) # calling inner function
 
 # *** NOTE: Parenthesis after the inner function are removed so that the outer function returns inner function.
+
