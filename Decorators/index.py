@@ -47,3 +47,47 @@ Hello!
 
 """
 
+# Example 2
+
+def outer(func):
+    def inner():
+        print("Accessing :",func.__name__)
+        return func()
+    return inner
+
+def greet():
+   return 'Hello!'
+
+greet = outer(greet) # decorating 'greet'
+greet()  # calling new 'greet'
+
+# Output
+Accessing : greet
+
+"""
+- The function returned by outer is assigned to greet i.e the function name passed as argument to outer.
+- This makes outer a decorator to greet.
+
+"""
+
+
+"""
+
+- In Python, decorating a function can also be achieved by writing decorator function name, prefixed with @ symbol, just above the function to be decorated.
+- Hence, greet = outer(greet) expression is same as @outer.
+
+"""
+# Example 3
+
+def outer(func):
+    def inner():
+        print("Accessing :",func.__name__)
+        return func()
+    return inner
+@outer
+def greet():
+    return 'Hello!'
+greet()
+
+# Output
+# Accessing : greet
