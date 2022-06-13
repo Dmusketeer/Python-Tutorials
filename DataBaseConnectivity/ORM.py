@@ -17,7 +17,7 @@ The above code is written in Python and easy to read.
 
 Such an ability to write Python code instead of SQL speeds up web application development.
 
-
 """
-
 # Django -> Django ORM -> Psycopg(database connector) -> postgreSql
+
+

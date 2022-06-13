@@ -20,7 +20,7 @@ sql='''
 
 # executing sql block using try....except blocks
 
-try:
+try: 
     cursor.executemany(sql,rec)
     conn.commit()
 except Exception as e:

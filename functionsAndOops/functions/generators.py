@@ -19,3 +19,6 @@ def gen_number():  # generator function
         yield i**2
 x = gen_number()
 next(x)            # -> 36
+
+print(sorted({ ord(i) for i in 'apple' }))
+print({0 if i%2 ==0 else 1 for i in range(8)})
