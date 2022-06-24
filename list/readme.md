@@ -333,6 +333,7 @@ print(list(itr)) # convert into iterable
 
 - Sometimes, you need to iterate over elements of a list and select some of them based on specified criteria.
 
+- Use the Python filter() function to filter a list (or a tuple).
 ```py
 lst=[10,20,30,40,50]
 lst1=[]
@@ -383,3 +384,45 @@ Example :
 
 ```
 
+
+## Reduce() function
+### Reducing a list
+
+- Sometimes, you want to reduce a list to a single value. For example, suppose that you have a list of numbers
+
+```py
+marks=[50,22,10,70,80]
+# sum of all the elements
+total=0
+for mark in marks:
+    total=total+mark
+print(total)
+
+# we have reduced the whole list into a single value
+```
+
+- Python offers a function called **reduce()** that allows you to reduce a list in a more concise way.
+
+syntax:
+        
+        reduce(fn,list)
+
+
+
+- The reduce() function applies the fn function of two arguments cumulatively to the items of the list, from left to right, to reduce the list into a single value.
+
+- Unlike the map() and filter() functions, the reduce() isn’t a built-in function in Python. In fact, the reduce() function belongs to the functools module.
+
+- To use the reduce() function, you need to import it from the functools module
+
+        from functools import reduce
+
+
+```py
+from functools import reduce
+marks=[50,22,10,70,80]
+# sum of all the elements
+total=reduce(lambda a,b:a+b,marks)
+print(total)
+
+```
