@@ -328,7 +328,58 @@ print(list(itr)) # convert into iterable
 
 ```
 
+## filter() function
+## How to Filter List Elements in Python
+
+- Sometimes, you need to iterate over elements of a list and select some of them based on specified criteria.
+
+```py
+lst=[10,20,30,40,50]
+lst1=[]
+for i in lst:
+    if i > 30:
+        lst1.append(i)
+
+print(lst1)
+``` 
+
+- Python has a built-in function called filter() that allows you to filter a list (or a tuple) in a more beautiful way.
+
+        filter(fn, list)
 
 
+- The filter() function iterates over the elements of the list and applies the fn() function to each element. It returns an iterator for the elements where the fn() returns **True**.
 
+- In fact, you can pass any iterable to the second argument of the filter() function, not just a list.
+
+
+```py
+lst=[10,20,30,40,50]
+filtered=filter(lambda ele:ele>20,lst)
+print(list(filtered))
+``` 
+- Since the filter() function returns an iterator, you can use a for loop to iterate over it. Or you can use the list() function to convert the iterator to a list.
+
+
+Example :
+
+```py
+    countries = [
+        ['China', 1394015977],
+        ['United States', 329877505],
+        ['India', 1326093247],
+        ['Indonesia', 267026366],
+        ['Bangladesh', 162650853],
+        ['Pakistan', 233500636],
+        ['Nigeria', 214028302],
+        ['Brazil', 21171597],
+        ['Russia', 141722205],
+        ['Mexico', 128649565]
+    ]
+
+    # get all the countries whose populations are greater than 300 million using filter function
+    filtered=filter(lambda c: c[1]>300000000, countries)
+    print(list(filtered))
+
+```
 
