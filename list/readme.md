@@ -207,3 +207,76 @@ print(result)
 
 - However, if you attempt to find an element that doesn’t exist in the list using the index() function, you’ll get an error.
 
+```py
+cities = ['New York', 'Beijing', 'Cairo', 'Mumbai', 'Mexico']
+
+result = cities.index('Osaka')
+print(result)
+
+Error:
+ValueError: 'Osaka' is not in list
+
+```
+
+
+- Use the in operator with the index() function to find if an element is in a list.
+
+
+## Python Iterables
+
+- In Python, an iterable is an object that includes zero, one, or many elements. An iterable has the ability to return its elements one at a time.
+
+- Because of this feature, you can use a for loop to iterate over an iterable.
+
+- In fact, the range() function is an iterable because you can iterate over its result:
+
+```py
+for index in range(3):
+    print(index)
+
+# Output:
+0
+1
+2
+
+```
+
+- The rule of thumb is that if you know if can loop over something, it’s iterable.
+
+## What is an iterator
+- An iterable can be iterated over. And an iterator is the agent that performs the iteration.
+
+- To get an iterator from an iterable, you use the **iter()** function. For example:
+```py
+colors = ['red', 'green', 'blue']
+colors_iter = iter(colors)
+```
+once you have the iterator, you can get the next element from the iterable using the next() function:
+
+```py
+colors = ['red', 'green', 'blue']
+colors_iter = iter(colors)
+
+color = next(colors_iter)
+print(color)
+
+color = next(colors_iter)
+print(color)
+
+color = next(colors_iter)
+print(color)
+
+# Output:
+red
+green
+blue
+
+```
+
+- If there isn’t any more element and you call the next() function, you’ll get an exception.
+
+- The iterator is stateful. It means that once you consume an element from the iterator, it’s gone.
+
+- In other words, once you complete looping over an iterator, the iterator becomes empty. If you iterate over it again, it’ll return nothing.
+
+- Since you can iterate over an iterator, the iterator is also an iterable object. 
