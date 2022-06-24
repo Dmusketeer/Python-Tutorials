@@ -280,3 +280,55 @@ blue
 - In other words, once you complete looping over an iterator, the iterator becomes empty. If you iterate over it again, it’ll return nothing.
 
 - Since you can iterate over an iterator, the iterator is also an iterable object. 
+
+
+## Map() Function
+
+When working with a list (or a tuple), you often need to transform the elements of the list and return a new list that contains the transformed element.
+
+```py
+# double the each elements
+lst=[10,20,30,40]
+lst1=[]
+for i in lst:
+    lst1.append(i*2)
+
+# Output : [20,40,60,80]
+
+```
+
+- Python provides a nicer way to do this kind of task by using the **map()** built-in function.
+- Python provides a nicer way to do this kind of task by using the map() built-in function.
+
+- Syntax of map() function:
+        
+        iterator = map(fn, list)
+
+
+- In this syntax, fn is the name of the function that will call on each element of the list.
+
+- In fact, you can pass any **iterable** to the **map()** function, not just a list or tuple.
+
+
+```py
+
+# double each elements in list
+lst=[10,20,30,40,50]
+def double(ele):
+    return ele*2
+itr=map(double,lst) #it will return iterator 
+print(list(itr))
+
+# make this code more concise by using a lambda expression like this:
+
+lst=[10,20,30,40,50]
+
+itr=map(lambda ele:ele*2,lst)
+print(list(itr)) # convert into iterable
+
+```
+
+
+
+
+
