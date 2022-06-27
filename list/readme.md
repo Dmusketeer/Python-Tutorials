@@ -426,3 +426,35 @@ total=reduce(lambda a,b:a+b,marks)
 print(total)
 
 ```
+
+
+## List Comprehensions
+
+- Python list comprehensions allow you to create a new list from an existing one.
+- Use list comprehensions instead of map() or filter() to make your code more concise and readable.
+
+basic syntax of the Python list comprehension:
+
+        [output_expression for element in list]
+
+- list comprehension with if condition
+
+        [output_expression for element in list if condition]
+
+```py
+
+# get a list of mountains where the height is greater than 8600 meters
+
+mountains = [
+    ['Makalu', 8485],
+    ['Lhotse', 8516],
+    ['Kanchendzonga', 8586],
+    ['K2', 8611],
+    ['Everest', 8848]
+]
+
+highest_mountains=[m for m in mountain if m[1]>8600]
+
+print(highest_mountains)
+
+```
