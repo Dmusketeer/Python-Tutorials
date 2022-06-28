@@ -158,5 +158,4 @@ new_stocks = {symbol: price * 1.02 for (symbol, price) in stocks.items()}
 ```py
 selected_stocks = {s: p for (s, p) in stocks.items() if p > 200}
 print(selected_stocks)
-
 ```
