@@ -129,5 +129,5 @@ delattr(MyFirstClass, 'age')
 ```
 - Or you can use the del keyword:
 ```py
-del HtmlDocument.version
+del MyFirstClass.version
 ```
