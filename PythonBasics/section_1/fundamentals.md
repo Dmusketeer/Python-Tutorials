@@ -39,8 +39,6 @@ Use slicing to extract a substring from a string.</li>
 
 <em>NOTE :</em> Escape characters used in Python
 
-\f Form Feed
-
 <table style="border:2px solid">
 <tr>
 <th>Code</th>
@@ -83,7 +81,6 @@ Use slicing to extract a substring from a string.</li>
 
 
 <hr>
-
 
 ## <b style="color:coral">Python Strings Cheat Sheet</b>
 
