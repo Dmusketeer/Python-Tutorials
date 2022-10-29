@@ -20,3 +20,14 @@ turtle.exitonclick()
 
 
 
+"""
+By combining these simple shapes and using nested loops (i.e. loops inside other loops) 
+it is possible to create beautiful patterns very easily. 
+"""
+for i in range(0,10):
+    turtle.right(36)
+    turtle.shape("turtle")
+    for i in range(0,5):
+        turtle.forward(100)
+        turtle.right(72)
+turtle.exitonclick()
