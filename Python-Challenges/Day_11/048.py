@@ -7,4 +7,5 @@ print(country_tuple)
 user_preference=input("Enter country Name from the above tuple: ")
 print(country_tuple.index(user_preference))
 
-
+# user_choice=int(input("Enter Number: "))
+# print(country_tuple[user_choice])
