@@ -5,7 +5,8 @@
 # successfully added, display the message “Thank 
 # you” and display the array with each item shown 
 # on a separate line.
-nums=[]
+from array import *
+nums=array("i",[])
 while len(nums)<5:
     userChoice=int(input("Enter a number: "))
     if 10<userChoice<20:
