@@ -11,7 +11,7 @@
 # on a Windows system is to read it using Notepad. 
 
 
-numbers_file=open("numbers.txt","w")
+numbers_file=open("Day_14/numbers.txt","w")
 numbers_file.write("1,")
 numbers_file.write("2,")
 numbers_file.write("3,")
